@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      margin: 1rem;
+      padding: 0rem;
+    }
+
+.parent{
+  
+
+      display: grid;
+      grid-template-columns: 320px 419px;
+      grid-template-rows: 414px 296px 20px;
+      gap: 9px;
+      background-color: #232629;
+      
+      
+}
+
+.red-box {
+   
+      background-color: #E72F24;
+      grid-column: 1/  span 1;
+      grid-row: 1/  span 1;
+     
+      
+}
+
+.white-box{
+  background-color: #F0F1EC;
+  grid-column: 2/  span 1;
+      grid-row: 1/  span 1;
+     
+  
+     
+}
+
+.snd-white-box{
+  background-color: #F0F1EC;
+      grid-row-start: 2;
+      grid-row-end:  3;
+      grid-column-start: 1;
+      grid-column-end: 1;
+      
+   
+}
+
+.last-row{
+  grid-column: 1/  span 1;
+      grid-row: 3/  span 1;
+     
+  
+  background-color: #F0F1EC;
+ 
+ 
+}
+
+.trd-white-box{
+  
+  grid-column: 2/  span 1;
+      grid-row: 2/  span 1;
+     
+gap: 9px;
+  display: grid;
+  grid-template-columns: 198px 153px 50px;
+  grid-template-rows: 130px 155px 20px;
+}
+
+.blue-box{
+  grid-column: 1 / span ;
+  grid-row: 1 / span 0;
+  background-color: #004592;
+
+  
+}
+
+.center-white{
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  background-color: #F0F1EC;
+
+}
+
+.yellow-box{
+  grid-column: 1 / span 2;
+  grid-row: 3/ span 1;
+  background-color:#F9D01E;
+ 
+}
+
+.black-box{
+  grid-column: 2 / span 1;
+  grid-row:  3/ span 1;
+  background-color:#232629;
+  
+
+}
+
+.corner-white{
+  grid-column: 3 /span 1;
+  grid-row: 2/ span 2;
+  background-color:#F0F1EC;
+  border: solid ;
+  border-width: 1px 0px 0px 0px;
+}
+
+    
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+ 
+  <div class="parent"> 
+    <div class="red-box"> </div>
+    <div class="white-box"> </div>
+    <div class="snd-white-box">  </div>
+    <div class="last-row"></div>
+
+    <div class="trd-white-box"> 
+       <div class="center-white"></div>
+       <div class="blue-box"></div>
+       <div class="yellow-box"></div>
+       <div class="black-box"></div>
+       <div class="corner-white"></div>
+
+    </div>
+    
+  </div>
+
+</body>
+
+</html>
